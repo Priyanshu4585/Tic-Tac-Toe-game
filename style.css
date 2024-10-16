@@ -40,25 +40,15 @@ body{
     background-image: url(1.jpg);
     }
  
-#resetgame{
+#resetgame,#newGame{
 padding: 10px;
 background-color: #191913;
 color: aquamarine;
 border-radius: 10px;
 font-weight: 900;
 box-shadow: 7px 7px 3px rgba(0,0,0,0.5);
-
-
 }
-#newGame{
-padding: 10px;
-background-color: #191913;
-color: aquamarine;
-border-radius: 10px;
-font-weight: 900;
-box-shadow: 7px 7px 3px rgba(0,0,0,0.5);
 
-}
 #msg{
     color: #ffffc7;
     font-size: 8vmin;
@@ -80,4 +70,43 @@ h1{
     height: 0px;
     text-shadow:  7px 7px 3px rgba(0,0,0,0.3);
     color: #191913;
+}
+
+
+@media (max-width: 768px) {
+    .game {
+        height: 80vmin;
+        width: 80vmin;
+    }
+    .box {
+        height: 22vmin;
+        width: 22vmin;
+        font-size: 16vmin;
+    }
+    h1 {
+        font-size: 300%;
+    }
+}
+
+/* For mobile screens */
+@media (max-width: 480px) {
+    .container {
+        margin-top: 50px;
+    }
+    .game {
+        height: 100vmin;
+        width: 100vmin;
+        gap: 1vmin;
+    }
+    .box {
+        height: 28vmin;
+        width: 28vmin;
+        font-size: 18vmin;
+    }
+    h1 {
+        font-size: 200%;
+    }
+    #msg {
+        font-size: 6vmin;
+    }
 }
